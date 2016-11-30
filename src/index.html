@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Collapsible Plugin: Demo</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/jquery.collapsible.demo.css">
+</head>
+
+<body>
+    <h1>jQuery Collapsible Plugin</h1>
+    <div>
+        <button data-toggle="collapse" data-target="#box1" data-group="toggles" aria-expanded="false">
+            toggle 1
+        </button>
+        <div class="box" id="box1" aria-expanded="true">
+            <p>
+                Box 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ultricies libero. Aenean at augue consectetur, eleifend quam et, rutrum quam. Phasellus quam tortor, euismod aliquet ultricies at
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <button data-toggle="collapse" data-target="#box2" data-group="toggles" aria-expanded="false">
+            toggle 2
+        </button>
+        <div class="box" id="box2" aria-expanded="false">
+            <p>
+                Box 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. .
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <button data-toggle="collapse" data-target="#box3" data-group="toggles" aria-expanded="false">
+            toggle 3
+        </button>
+        <div class="box" id="box3" aria-expanded="false">
+            <p>
+                Box 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ultricies libero. Aenean at augue consectetur, eleifend quam et
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <button data-toggle="collapse" data-target="#box4" data-group="toggles" aria-expanded="true">
+            toggle 4
+        </button>
+        <div class="box" id="box4" aria-expanded="false">
+            <p>
+                Box 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ultricies libero. Aenean at augue consectetur, eleifend quam et, rutrum quam. Phasellus quam tortor, euismod aliquet ultricies at, vestibulum vel ligula. Duis venenatis nec leo ut rhoncus. Aenean a tortor in ligula iaculis molestie. Pellentesque vel dictum ipsum. Donec et feugiat arcu, id malesuada augue. Fusce et luctus orci. Nam vitae lorem in enim mollis tincidunt non sit amet ipsum. Aliquam posuere risus metus, non posuere lacus dictum eu. Donec mauris est, mattis in tincidunt congue, egestas vel mauris. Phasellus convallis, massa et efficitur vehicula, odio turpis molestie quam, sed finibus lacus lorem ac odio. Sed vehicula nec mauris eget accumsan. Suspendisse pretium quam id enim gravida auctor. Nulla non tellus lobortis, congue orci vitae, rhoncus nibh. Duis blandit eros at erat pellentesque porttitor. Nullam vestibulum dolor ac felis ultrices porttitor. Duis in mattis nulla. Nulla id nibh tellus. Phasellus at ante lectus. Etiam bibendum lectus egestas rhoncus tincidunt. Vestibulum sit amet ligula varius, vulputate nisl suscipit, rhoncus justo. Suspendisse urna ipsum, pretium eget porttitor vitae, vestibulum nec velit. Phasellus non ornare sem, eu mollis nisl. Mauris scelerisque lacus nec lacus lacinia porttitor. Morbi in tempor ante. Nulla facilisi.
+            </p>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="js/jquery.collapsible.js"></script>
+    <script src="js/jquery.collapsible.demo.js"></script>
+
+</body>
+</html>
