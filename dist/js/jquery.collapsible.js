@@ -72,6 +72,29 @@
 				me.trigger('toggle');
 			},
 
+			set: function () {
+				var args = arguments[1];
+				var prop = args[1];
+				var val = args[2];
+
+				var params = ['allowMultiple', 'group', 'speed', 'target'];
+				if (params.indexOf(prop) < 0) { return; }
+
+				arguments[0].each(function () {
+					this.__collapsible[prop] = val;
+				});
+			},
+
+			get: function () {
+				var args = arguments[1];
+				var prop = args[1];
+
+				var params = ['allowMultiple', 'group', 'speed', 'target'];
+				if (params.indexOf(prop) < 0) { return; }
+
+				return arguments[0].__collapsible[prop];
+			},
+
 			onClick: function (e) { // On click handler
 				if (!e.target.__collapsible) { return; }
 
@@ -138,6 +161,13 @@
 					this.each(function () { ns.toggle($(this)); });
 					break;
 
+				case 'set':
+					ns.set(this, arguments);
+					break;
+
+				case 'get':
+					ns.get(this, arguments);
+					break;
 			}
 
 			return this;

@@ -5,6 +5,9 @@ body {
 h1 {
   color: lightgray; }
 
+button {
+  width: 100%; }
+
 [data-toggle="collapse"] {
   cursor: pointer;
   width: 100%;

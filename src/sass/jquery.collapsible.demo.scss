@@ -7,9 +7,12 @@ h1 {
 	color: lightgray;
 }
 
+button {
+	width: 100%;
+}
 [data-toggle="collapse"] {
 	cursor: pointer;
-	width: 100%; 
+	width: 100%;
 	text-align: left;
 	padding: 10px;
 	background-color: white;
@@ -17,39 +20,39 @@ h1 {
 	margin-bottom: -1px;
 	outline: none;
 	transition: all .5s ease-in-out;
-	
+
 	&:hover {
 		background-color: #DCDCDC;
 	}
-	
+
 	&[aria-expanded="true"] {
 		background-color: #303030;
 		color: white;
 		border: 1px solid #303030;
-		
-		&:after { 
+
+		&:after {
 			content: "-";
 			margin-right: 2px;
-			float: right; 
-		}	
+			float: right;
+		}
 	}
-	
+
 	&[aria-expanded="false"] {
-		&:after { 
-			content: "+"; 
-			float: right; 
-		}	
-	}	
+		&:after {
+			content: "+";
+			float: right;
+		}
+	}
 }
 
-.box { 
+.box {
 	background-color: white;
-	border: 1px solid grey; 
+	border: 1px solid grey;
 	display: none;
-	
-	p { 
-		padding: 5px 20px; 
+
+	p {
+		padding: 5px 20px;
 	}
-	
+
 	margin-bottom: -1px;
 }
